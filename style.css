@@ -158,7 +158,7 @@ p{
 
 @media (max-width: 900px){
     .wrapper{
-        background: url('assets/img/Background-mobile.jpg') no-repeat;
+        background: url('assets/img/background-mobile.jpg') no-repeat;
         background-size: cover;
         margin: 0 ;
         padding: 0;
