@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #08090B;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 18px;
+}
+
+*{ 
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 12px;
+}
+
+ul{
+    padding-inline-start: 18px;
+    padding-bottom: 20px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.grid-body{
+    display: grid;
+    grid-template-columns: repeat(12fr);
+    grid-template-rows: auto;
+    grid-gap: 24px;
+ 
+}
+
+
+.main-page{
+    display: block;
+    background: url('/assets/img/background.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+/* 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px 0 60px;
+    grid-area: "header";
+} */
+
+.header{
+    display: grid;
+    justify-content: space-between;
+    padding: 40px 60px 0 60px;
+    grid-template-areas: "logo navigation";
+    
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    grid-area: "navigation";
+}
+
+.menu{
+    display: inline-flex;
+
+    
+}
+.menu li{
+    padding-right: 26px;  
+    list-style: none;
+    font-weight: 400;
+}
+.menu__item{
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+
+.menu__item:hover{
+    color: #FA4451;
+    transition: .1s;
+}
+
+.logo__circle:hover{
+    fill: #c20006;
+}
+
+.social-icons a{
+    padding-left: 12px;
+    text-decoration: none;
+}
+
+svg:hover{
+    fill: blue;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 56%;
+    padding-top: 10%;
+}
+
+.offer{
+    display: block;
+    width: 469px;
+    padding-left: 12px;
+}
+
+
+
+.btn-primary{
+    background-color: #FA4451;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 10px 36px 10px 36px;
+    text-decoration: none;
+    transition: .3s;
+    
+}
+
+
+.btn-primary:hover{
+    background-color: #c20006;
+    transition: .2s;
+}
